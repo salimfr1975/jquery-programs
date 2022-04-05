@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</script> 
+</head>
+<body>
+
+<button>Box Text Animation</button>
+
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;">Bonjour</div>
+
+<script> 
+    $(document).ready(function(){
+      $("button").click(function(){
+        var div = $("div");  
+        div.animate({width: '300px'}, "slow");
+        div.animate({fontSize: '5em'}, "slow");
+      });
+    });
+    </script>
+</body>
+</html>
+
+
+    
+    
+    
+    

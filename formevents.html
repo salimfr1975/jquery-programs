@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+            Form Events
+        </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Afci Formation - Form Events</h1>
+        <form action="" id="frm1">
+            <label for="">Nom :</label>
+            <input type="text" name="" id="txtNom">
+            <br><br>
+            <label for="">Prénom</label>
+            <input type="text" name="" id="txtPrenom">
+            <br>
+            <br>
+            <label for="">Pays</label>
+            <select name="" id="selPays">
+                <option value="France">France</option>
+                <option value="Allemand">Allemand</option>
+                <option value="Swiss">Swiss</option>
+                <option value="Italie">Italie</option>
+                <option value="Portugese">Portugese</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+        <div id="divBox" style="height: 100px;border:2px solid red"></div>
+          <script>
+            $(document).ready(function(){
+                $("#txtNom, #txtPrenom, #selPays").focus(function()
+                {
+                    $(this).css("background-color","lightblue");
+                })
+                $("#txtNom, #txtPrenom, #selPays").blur(function()
+                {
+                    $(this).css("background-color","");
+                })
+                $("#txtNom").select(function()
+                {
+                    $(this).css("background-color","pink");
+                })
+                $("#frm1").submit(function()
+                {
+                    alert("Form Enregister");
+                })
+              
+            
+            })
+        </script>
+    </body>
+</html>

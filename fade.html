@@ -1,0 +1,28 @@
+<html>
+    <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+<p>Afci Formation</p>
+<button>Fade</button><br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;">
+</div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;">
+</div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;">
+</div>
+<script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div1").fadeToggle();
+        $("#div2").fadeToggle("slow");
+        $("#div3").fadeToggle(3000);
+      });
+    });
+</script>
+
+</body>
+</html>
+
+
+

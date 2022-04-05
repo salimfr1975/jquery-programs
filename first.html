@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>JQuery Prémire Programme</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="box">
+            <ul id="test">
+                <li class="test">France</li>
+                <li>Allemand</li>
+                <li class="test">Swiss</li>
+                <li>Spain</li>
+                <li class="test">Portugese</li>
+            </ul>
+
+        </div>
+     
+        <script>
+            $(document).ready(function()
+            {
+                $(document).click(function()
+                {
+                    $('#box').css("color","red");
+                })
+                $(document).dblclick(function()
+                {
+                    $('#box').css("color","blue");
+                })
+                $(document).contextmenu(function()
+                {
+                    $('#box').css("color","green");
+                })
+    
+    
+
+            })
+        </script>
+    </body>
+
+</html>

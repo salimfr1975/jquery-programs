@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Mouse Event</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <style>
+            #box
+            {
+                border:2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">
+          <h2>Afci Formation</h2>  
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam suscipit maxime magni culpa numquam ut error optio sunt, reprehenderit mollitia? Quasi optio laboriosam quia, nihil sit aliquam? Minima vitae nesciunt iste enim deleniti culpa. Minus doloremque est repudiandae quam ipsam consectetur unde voluptatem eligendi, beatae, neque eos officiis iure laboriosam tenetur! Non, corporis delectus doloremque expedita tenetur, quos perferendis iure minus in iusto ipsum voluptas quis suscipit ratione eius corrupti magni distinctio libero, doloribus unde molestiae! Voluptates iusto nemo quae nobis at, excepturi necessitatibus nostrum quo inventore vel aperiam adipisci illo veniam omnis maiores error animi ex provident veritatis?</p>
+    
+        </div>
+        <script>
+            $(document).ready(function()
+            {
+                $("#box").click(function()
+                {
+                    $("#box").css("background-color","tan")
+                }
+                )
+
+                $("#box").dblclick(function()
+                {
+                    $("#box").css("background-color","lightblue")
+                }
+                )
+                $("#box").contextmenu(function()
+                {
+                    $("#box").css("background-color","lightgreen")
+                }
+                )
+                $("#box").mouseenter(function()
+                {
+                    $("#box").css("background-color","red")
+                }
+                )
+                $("#box").mouseleave(function()
+                {
+                    $("#box").css("background-color","yellow")
+                }
+                )
+                $("body").keypress(function()
+                {
+                    $(this).css("background-color","orange")
+                }
+                )
+                $("body").keyup(function()
+                {
+                    $(this).css("background-color","green")
+                }
+                )
+            }
+            
+            )
+        </script>
+        </body>
+</html>

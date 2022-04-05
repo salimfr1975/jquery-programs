@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Slide Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+    <style> 
+        #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: tan;
+        border: solid 1px black;
+        }
+        #panel {
+        padding: 50px;
+        display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="flip">Click Here</div>
+<div id="panel">Afci Formation</div>
+<script>
+    $(document).ready(function()
+    {
+        $("#flip").click(function(){
+            $("#panel").slideToggle("slow");
+        });
+
+    });
+</script>
+</body>
+</html>
+
